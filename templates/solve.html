@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %} Solveri {% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Sanajahti solveri</h1>
+    <p class="lead">Täytä tyhjät kirjainlaatat ja paina sinistä nappia löytääksesi pisimmät sanat</p>
+    <hr class="my-4">
+
+    <form action="#" method="post">
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control" name="r1c1" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r1c2" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r1c3" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r1c4" required="required">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control" name="r2c1" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r2c2" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r2c3" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r2c4" required="required">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control" name="r3c1" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r3c2" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r3c3" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r3c4" required="required">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+            <input type="text" class="form-control" name="r4c1" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r4c2" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r4c3" required="required">
+            </div>
+            <div class="col">
+            <input type="text" class="form-control" name="r4c4" required="required">
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="form-row">
+            <div class="col-3">
+            <input type="submit" class="form-control" value="Hae sanat!">
+            </div> 
+        </div>
+        
+    </form>
+    <hr class="my-4">
+    <p>{{ answer }}</p>
+</div>
+{% endblock %}
